@@ -1,0 +1,767 @@
+:root {
+  --confirm: rgb(255,17,16);
+  --active: rgb(16,114,255);
+  --recover: rgb(84,199,30);
+  --dead: rgb(143,143,143);
+  --vaccine: rgb(10,227,200);
+  --confirm_light: #ff111027;
+  --active_light: #1072ff27;
+  --recover_light: #54c71e27;
+  --dead_light: #8f8f8f27;
+  --vaccine_light: rgba(158,255,243,0.4);
+  --covid: #313656;
+  --19: #ff6276;
+  --19_hover: rgb(255,54,80);
+}
+
+/* page animation */
+
+.fadeInUp {
+  animation-duration: .45s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* dashboard */
+
+#dashboard-datatable {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media (max-width: 992px) {
+  #dashboard-datatable {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+#dashboard-table .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row.row-cols-3.justify-content-center.align-items-center {
+  padding-bottom: 1em;
+}
+
+#dashboard-table .row a {
+  border: none;
+  /*background-color: red;*/
+}
+
+#dashboard-table .row .col.expand {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+}
+
+#dashboard-table .row .col.expand div.contain {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  /*width: 100%;*/
+  /*min-width: 38%;*/
+}
+
+#dashboard-table .row .col.expand div.contain div {
+  position: relative;
+  padding: 5%;
+  padding-right: 20%;
+}
+
+#dashboard-table .row .col.expand div.contain div #table-info[data-tooltip='📌Districts info on respective States 📌Sortable Covid-19 Table']::after {
+  position: absolute;
+  content: attr(data-tooltip);
+  cursor: default;
+  background-color: rgb(255,243,144);
+  color: rgb(197,177,0);
+  box-shadow: 0px 0px 20px rgb(255,243,144);
+  width: 500%;
+  top: calc(10%);
+  left: calc(80%);
+  padding: .5em;
+  padding-left: .8em;
+  padding-right: .8em;
+  font-family: 'Poppins';
+  font-size: .7em;
+  line-height: 1.5em;
+  font-weight: bold;
+  border-radius: 3px;
+  letter-spacing: .8px;
+  text-align: left;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+#dashboard-table .row .col.expand div.contain div #table-info[data-tooltip='📌Districts info on respective States 📌Sortable Covid-19 Table']:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#dashboard-table .row .col-xl-8 .row .col {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  text-align: end;
+}
+
+#dashboard-table .row .col-xl-8 .row .col span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: end;
+  /*padding: 8px;*/
+  color: #ccc;
+  /*color: rgb(164,164,164);*/
+}
+
+@media (max-width: 500px) {
+  #dashboard-table .row .col-xl-8 .row .col {
+    width: 0%;
+    height: 0%;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+#dashboard-table .row .col-xl-8 .row .col-xl-8.form-group.pull-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#dashboard-table .row .col-xl-8 .row .col-xl-8.form-group.pull-right input {
+  border-radius: 3px;
+  /*border-bottom: 1px solid red;*/
+}
+
+#dashboard-table .row .col-xl-8 .row .col-xl-8.form-group.pull-right input:focus {
+  border: none!important;
+  outline: none!important;
+}
+
+#dashboard-table .row .col-xl-8 .row .col-xl-8.form-group.pull-right .dropdown {
+  position: relative;
+  margin: 0;
+  padding: 2.58333px;
+  padding-left: 5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#dashboard-table .row .col-xl-8 .row .col-xl-8.form-group.pull-right a[data-tooltip='Generate Report']::after {
+  position: absolute;
+  content: attr(data-tooltip);
+  cursor: default;
+  background-color: rgb(155,238,255);
+  color: rgb(0,153,183);
+  box-shadow: 0px 0px 20px rgb(155,238,255);
+  width: 150%;
+  top: calc(10%);
+  left: calc(102%);
+  padding: .5em;
+  padding-left: .8em;
+  padding-right: .8em;
+  font-family: 'Poppins';
+  font-size: .7em;
+  font-weight: bold;
+  line-height: 1.5em;
+  border-radius: 3px;
+  letter-spacing: .8px;
+  text-align: left;
+  z-index: 100!important;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+#dashboard-table .row .col-xl-8 .row .col-xl-8.form-group.pull-right a[data-tooltip='Generate Report']:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  #dashboard-table .row .col-xl-8 .row .col-xl-8.form-group.pull-right a[data-tooltip='Generate Report']:hover::after {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  top: 100%;
+  transition: all 0.10s ease-in-out;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 180%;
+  background-color: #ffffff;
+  min-width: 100px;
+  box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.36);
+  z-index: 1;
+  /*padding-top: 5px;*/
+  /*padding-bottom: 5px;*/
+}
+
+.dropdown-content a {
+  background: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  text-align-last: end;
+  font-family: 'Poppins';
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 0px 0px 0px!important;
+}
+
+.dropdown-content a:first-child {
+  background: white;
+  color: #9777a8;
+}
+
+.dropdown-content a:hover:first-child {
+  background-color: rgba(151,119,168,0.5);
+  color: white;
+}
+
+.dropdown-content a:nth-child(2) {
+  background: white;
+  color: rgb(243,109,159);
+}
+
+.dropdown-content a:hover:nth-child(2) {
+  background-color: rgba(243,109,159,0.5);
+  color: rgb(255,255,255);
+}
+
+.dropdown-content a:last-child {
+  background: white;
+  color: rgb(204,75,76);
+}
+
+.dropdown-content a:hover:last-child {
+  background-color: rgba(204,75,76,0.5);
+  color: rgb(255,255,255);
+}
+
+/* map */
+
+@media (max-width: 500px) {
+  #dashboard-map-data {
+    padding: 0;
+  }
+}
+
+#dashboard-map .row #visualization .col, .map-style {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#dashboard-map .row #visualization .col .contain {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  /*padding-left: 4%;*/
+  margin: 0;
+}
+
+#dashboard-map .row #visualization .col .contain div:hover a {
+  animation: map_data_button 0.5s ease-out;
+}
+
+@keyframes map_data_button {
+  0% {
+    transform: translateY(0%);
+    transition: all 0.2s linear;
+  }
+  50% {
+    transform: translateY(-30%);
+    transition: all 0.2s linear;
+    /*box-shadow: 0px 5px 10px;*/
+    box-shadow: 0px 0px 10px -1px;
+    /*border-bottom: 3px solid;*/
+  }
+  100% {
+    transform: translateY(0%);
+    transition: all 0.2s linear;
+  }
+}
+
+@media (max-width: 500px) {
+  #dashboard-map .row #visualization .map-info-select {
+    padding: 0;
+  }
+}
+
+#dashboard-map .row #visualization .map-style .contain {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /*padding: 1%;*/
+  /*padding-left: 4%;*/
+  margin: 0;
+}
+
+#dashboard-map .row #visualization .map-style span {
+  height: 65%;
+  width: 2%;
+  background-color: rgb(210,210,210);
+}
+
+#dashboard-map .row #visualization .map-style .contain div {
+  padding: 5%;
+  transition: all 0.8s ease-in-out;
+}
+
+@media (max-width: 500px) {
+  #dashboard-map .row #visualization .map-style {
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #dashboard-map .row #visualization .map-style .contain div {
+    padding: 0;
+  }
+}
+
+#dashboard-map .row #map-data .row .col div.map-hover-data-item {
+  width: 50%;
+}
+
+#dashboard-map .row #map-data .row .col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#dashboard-map .row #map-data .row .col div {
+  margin: 0;
+  font-family: 'Poppins';
+  width: 100%;
+}
+
+#dashboard-map .row #map-data .row .col div h3 {
+  text-align: center;
+  margin: 0px;
+  font-weight: 600;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 500px) {
+  #dashboard-map .row #map-data .row .col div h3 {
+    text-align: center;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+}
+
+#dashboard-map .row #map-data .row .col .map-data-info {
+  /*width: 100%;*/
+  /*height: 75%;*/
+  background-color: rgb(230,230,230);
+  color: inherit;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+
+@media (max-width: 1110px) {
+  #dashboard-map .row #map-data .row .col .map-data-info {
+    margin: 0.3rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #dashboard-map .row #map-data .row .col {
+    /*padding: 0;*/
+  }
+}
+
+@media (max-width: 500px) {
+  #dashboard-map .row #map-data .row .col .map-data-info {
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #dashboard-map .row #map-data .row .col .map-data-info h5 {
+    font-size: 0.8em!important;
+  }
+}
+
+#dashboard-map .row #map-data .row .col .map-data-info h5 {
+  font-size: 0.9em;
+  /*width: 5.6vw;*/
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#dashboard-map-row.map_grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@media (max-width: 992px) {
+  #dashboard-map-row.map_grid {
+    display: block;
+  }
+}
+
+#dashboard-map-data.map_data_grid {
+  grid-column: 1/6;
+  padding: 0;
+}
+
+#dashboard-map-data.map_data_grid #visualization {
+  /*padding: 0;*/
+}
+
+#dashboard-map-data.map_data_grid #map-data .row .col .map-data-info {
+  padding: 0.6rem;
+  margin: 0.4rem;
+}
+
+#dashboard-map-data.map_data_grid #map-data .row .col .row .col {
+  padding: 0;
+}
+
+#dashboard-map-india.map_india_grid {
+  grid-column: 6/13;
+  grid-row: 1/4;
+}
+
+#chart-container.map_chart_grid {
+  grid-column: 1/6;
+}
+
+/* map-india */
+
+#dashboard-map-india {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  /*border: 1px solid red;*/
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#dashboard-map-india #indiamap {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /*border: 1px solid blue;*/
+}
+
+/* chart-container */
+
+#chart-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0;
+}
+
+#chart-container .row .col {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#chart-container .row .col .contain {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#chart-container .row .col .contain div a {
+  width: 7.5rem;
+  height: 3rem;
+}
+
+@media (max-width: 1253px) {
+  #chart-container .row .col .contain div a {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  #chart-container .row .col .contain div a {
+    margin: 0px;
+    width: 4.8rem;
+    height: 1.8rem;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  #chart-container .row .col {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#chart-container .row .col {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#chart-container .row .col select {
+  position: relative;
+  left: 0;
+  height: 28px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 12px;
+  width: 95%;
+  color: #6e707e;
+  border-radius: 3px;
+  border-color: rgb(171,171,173);
+}
+
+#chart-container .row.india-state-chart-conatainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#chart-container .row .map_chart_info {
+  position: relative;
+  /*margin-top: 1rem;*/
+}
+
+@media (max-width: 1200px) {
+  #chart-container .row .map_chart_info {
+    padding: 0;
+  }
+}
+
+#chart-container .row .map_chart_info div.india-state-chart {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem;
+  margin-bottom: 0.5rem;
+  /*margin-top: 0.5rem;*/
+  /*box-shadow: 0 0px 1200px;*/
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+@media (max-width: 1500px) {
+  #chart-container .row .map_chart_info div.india-state-chart {
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  #chart-container .row .map_chart_info div.india-state-chart {
+    margin: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+#chart-container .row .map_chart_info div h6 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Poppins';
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  font-size: small;
+}
+
+#chart-container .row .map_chart_info div h5 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: medium;
+  margin-bottom: 0;
+}
+
+#chart-container .row .map_chart_info div h4 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Poppins';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: x-large;
+}
+
+#chart-container .row .map_chart_info svg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /*border: 1px solid red;*/
+}
+
+#chart-container .row #chart-days {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+#chart-container .row #chart-days div.btn-group-toggle {
+  border-radius: 5px;
+  width: 90%;
+  overflow: hidden;
+}
+
+#chart-container .row #chart-days div.btn-group-toggle div.change_graph_days {
+  background-color: rgb(253,249,161);
+  color: rgb(243,168,21);
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  #chart-container .row #chart-days div.btn-group-toggle div.change_graph_days {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #chart-container .row #chart-days div.btn-group-toggle div.change_graph_days {
+    font-size: 0.4rem;
+  }
+}
+
+#chart-container .row #chart-days div.btn-group-toggle div.change_graph_days:hover {
+  background-color: rgb(252,235,25)!important;
+}
+
+#chart-container .row #chart-days div.btn-group-toggle div:last-child {
+  width: 0%;
+  border-left: 2px solid rgb(255,255,255);
+}
+
+#chart-container .row #chart-days div.btn-group-toggle div:nth-child(3) {
+  width: 10%;
+  border-right: 2px solid rgb(255,255,255);
+  border-left: 2px solid rgb(255,255,255);
+}
+
+#chart-container .row #chart-days div.btn-group-toggle div:nth-child(2) {
+  width: 20%;
+  border-right: 2px solid rgb(255,255,255);
+  border-left: 2px solid rgb(255,255,255);
+}
+
+#chart-container .row #chart-days div.btn-group-toggle div:nth-child(1) {
+  width: 30%;
+  border-right: 2px solid rgb(255,255,255);
+  background-color: rgb(255,247,97);
+}
+
+/* a shadow */
+
+#dashboard-datatable a {
+  box-shadow: 0px 0px 5px -3px;
+}
+
+#dashboard-datatable a:hover {
+  box-shadow: 0px 0px 10px -5px;
+  /*filter: drop-shadow(0px 0px 20px );*/
+}
+
+/* scroll_to_top */
+
+#scroll_to_top {
+  position: fixed;
+  right: 2rem;
+  bottom: 10rem;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 25px 45px rgb(0 0 0 / 10%);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  color: rgb(255,141,141);
+  outline: none;
+  z-index: 2000;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+#scroll_to_top.active {
+  bottom: 2rem;
+  visibility: visible;
+  opacity: 1;
+}
+

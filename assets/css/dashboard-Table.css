@@ -1,0 +1,344 @@
+#dashboard_table .row .col-lg-6.shrink .table-responsive .table thead tr th.extend {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#dashboard_table .row .col-lg-6.shrink .table-responsive .table tbody tr td.extend {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.results tr[visible='false'], .no-result {
+  display: none;
+}
+
+.results tr[visible='true'] {
+  display: table-row;
+}
+
+@media (max-width: 500px) {
+  #dashboard-table {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  /*overflow-x: hidden;*/
+}
+
+@media (max-width: 500px) {
+  .table-responsive thead th span, tbody tr > th, td {
+    font-size: 0.9em!important;
+  }
+}
+
+@media (max-width: 500px) {
+  .table-responsive tbody tr > th, td {
+    padding: 9px!important;
+    font-size: 1.1em!important;
+  }
+}
+
+.table-responsive > .table th, .table td {
+  vertical-align: middle;
+  box-sizing: border-box;
+  /*background-color: rgba(247,247,247,0.71);*/
+}
+
+.table-responsive .table.sticky thead .th-states, .delta_th-states {
+  position: sticky!important;
+  left: -2.5px;
+  z-index: 2;
+  text-align: left;
+}
+
+.table-responsive .table.sticky tbody tr th {
+  position: sticky!important;
+  left: -2.5px;
+  z-index: 2;
+}
+
+.table-responsive thead tr th {
+  padding: 0.5rem;
+  /*line-height: 1.2em;*/
+  position: relative;
+  background-color: rgb(236,236,236);
+  border: 5px solid rgba(255,255,255,0);
+  border-radius: 12px;
+  /*margin-right: 5px;*/
+  /*border: 5px solid #f5cf07;*/
+  cursor: pointer;
+  font-size: 13.5px;
+  /*font-weight: bold;*/
+  font-family: Poppins;
+  /*padding: 8px;*/
+  /*padding-left: 1.5em;*/
+  /*padding-right: .5em;*/
+  /*padding-top: .5em;*/
+  /*padding-bottom: .5em;*/
+}
+
+.table-responsive thead tr th span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-responsive thead tr th span i.dk {
+  /*margin-left: 10%!important;*/
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.table-responsive thead tr th.active span i.dk {
+  display: inline-flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+.table-responsive thead tr th.th-reports {
+  text-align: right;
+}
+
+#realtimedata thead tr th .Tooltip i[data-tooltip='Migrated cases or non COVID deaths']::after {
+  position: absolute;
+  content: attr(data-tooltip);
+  cursor: default;
+  background-color: rgb(228,174,255);
+  color: rgb(178,19,255);
+  box-shadow: 0px 0px 10px rgba(178,19,255,0.5);
+  width: 180%;
+  left: calc(110%);
+  text-align: center;
+  box-sizing: border-box;
+  padding: .5em;
+  padding-left: .8em;
+  padding-right: .8em;
+  font-family: 'Poppins';
+  font-size: .7em;
+  line-height: 1.5em;
+  border-radius: 5px;
+  z-index: 100;
+  letter-spacing: .8px;
+  font-weight: bold;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+#realtimedata thead tr th .Tooltip i[data-tooltip='Migrated cases or non COVID deaths']:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  /*transition: opacity 0.3s, transform 0.2s;*/
+}
+
+#realtimedata thead tr th .Tooltip i[data-tooltip='Test Positivity Ratio']::after {
+  position: absolute;
+  content: attr(data-tooltip);
+  cursor: default;
+  background-color: #feacff;
+  color: rgb(236,18,239);
+  box-shadow: 0px 0px 10px rgba(250,19,253,0.5);
+  /*width: 180%;*/
+  left: calc(95%);
+  text-align: center;
+  box-sizing: border-box;
+  padding: .5em;
+  padding-left: .8em;
+  padding-right: .8em;
+  font-family: 'Poppins';
+  font-size: .7em;
+  line-height: 1.5em;
+  border-radius: 5px;
+  z-index: 100;
+  letter-spacing: .8px;
+  font-weight: bold;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+#realtimedata thead tr th .Tooltip i[data-tooltip='Test Positivity Ratio']:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  /*transition: opacity 0.3s, transform 0.2s;*/
+}
+
+#realtimedata thead tr th.th-reports:nth-child(6) span {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#realtimedata thead tr th.th-reports:nth-child(6) span i {
+  /*color: rgb(169,169,169);*/
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  /*margin-left: 8px;*/
+}
+
+.table-responsive tbody {
+  text-align: center;
+  font-size: 10px;
+  /*height: 100%;*/
+  /*width: 93.5%;*/
+  cursor: pointer;
+}
+
+.table-responsive tbody tr > th, td {
+  border: 5px solid rgba(255,255,255,0);
+  border-radius: 12px;
+  position: relative;
+  max-height: none;
+  /*height: 40px;*/
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow-x: initial;
+  word-wrap: break-word;
+  font-family: Poppins;
+  /*font-family: 'Montserrat';*/
+  /*border: 2px solid red;*/
+  cursor: pointer;
+  animation: table 0.4s ease-in;
+}
+
+@keyframes table {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+#realtimedata::-webkit-scrollbar {
+  width: 0px;
+}
+
+.table-responsive tbody tr > th {
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(236,236,236);
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px;
+  color: rgb(122,122,122);
+  cursor: pointer;
+}
+
+.table-responsive tbody tr > td {
+  font-size: 13px;
+  letter-spacing: .8px;
+  text-align: right;
+  color: rgb(122,122,122);
+  cursor: pointer;
+}
+
+.table-responsive thead tr th:hover {
+  background-color: rgb(226,226,226);
+}
+
+.table-responsive tbody .row_state:hover td {
+  background-color: rgb(226,226,226);
+}
+
+.table-responsive tbody .row_state:hover th {
+  background-color: rgb(226,226,226);
+}
+
+.table-responsive tbody #delta_tbody .row_district:hover td {
+  background-color: rgb(226,226,226);
+}
+
+.table-responsive tbody #delta_tbody .row_district:hover th {
+  background-color: rgb(226,226,226);
+}
+
+.col-lg-6.shrink .table-responsive thead tr th {
+  padding: 0.9rem;
+}
+
+.table-responsive #delta_realtimedata thead tr th {
+  width: 5%;
+}
+
+.col-lg-6.col-lg-12 td.row_district {
+  padding: 4rem 3.7rem;
+}
+
+.table-responsive thead tr th span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#realtimedata thead tr th span i {
+  margin-left: .5em;
+  /*color: rgb(179,179,179);*/
+  color: inherit;
+}
+
+/* s */
+
+#delta_realtimedata {
+  position: relative;
+  /*margin-left: 10%;*/
+  /*margin-right: 10%;*/
+}
+
+#delta_realtimedata thead tr th {
+  /*line-height: 1.2em;*/
+  cursor: pointer;
+  font-family: Poppins;
+  padding: 1em;
+  /*padding-top: .5em;*/
+  /*padding-bottom: .5em;*/
+}
+
+.col-lg-6.shrink .table-responsive #delta_realtimedata thead tr th {
+  padding: 1em!important;
+}
+
+#delta_realtimedata thead tr th:first-child {
+  z-index: 20;
+}
+
+@media (min-width: 1200px) {
+  .table-responsive {
+    overflow-x: hidden;
+  }
+}
+
+.state_district {
+  /*transition: 5s ease-in;*/
+  /*visibility: hidden;*/
+  /*opacity: 0;*/
+  /*display: none;*/
+}
+

@@ -1,0 +1,93 @@
+@media (max-width: 991px) {
+  #content-wrapper #content .d-lg-flex .container .row #heading-status {
+    order: 2;
+  }
+}
+
+@media (max-width:539px) {
+  .col-md-3 {
+    flex: 10 0 25%;
+    width: 200px!important;
+    max-width: 100%!important;
+    margin: 8px!important;
+    /*margin-top: 15px!important;*/
+    /*margin-bottom: 15px!important;*/
+    /*margin-left: 15px!important;*/
+    /*margin-right: 15px!important;*/
+  }
+}
+
+@media (min-width:575px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 23%!important;
+    /*margin-top: 8px!important;*/
+    /*margin-bottom: 8px!important;*/
+  }
+}
+
+@media (min-width:992px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 23%!important;
+  }
+}
+
+@media (max-width: 991px) {
+  #content-wrapper #content .d-lg-flex .container .row #heading-india {
+    order: 1;
+  }
+}
+
+@media (max-width: 479px) {
+  #wrapper #content-wrapper #content .d-lg-flex .container .row #heading-india .row .col #empty-row {
+    height: 128px!important;
+  }
+}
+
+.cust_blogteaser {
+  text-align: center;
+  padding-top: 40px;
+  min-height: 425px;
+  /*background: rgba(255,255,255,0.1);*/
+  /*backdrop-filter: blur(3px);*/
+}
+
+.cust_blogteaser h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img-fluid, .img-thumbnail, .removeClass {
+  display: inline-block;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+/* new era 11/2/2021 */
+
+#heading-vaccine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em!important;
+  margin-bottom: 1em!important;
+  border-radius: 10px;
+  background-color: rgba(158,255,243,0.4);
+  padding: 0.6em;
+}
+
+#heading-vaccine div h4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0ae3c8;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: 'Poppins';
+  font-weight: bold;
+  text-align: center;
+}
+

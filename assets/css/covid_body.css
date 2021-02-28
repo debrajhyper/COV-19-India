@@ -1,0 +1,216 @@
+section#covid_what {
+}
+
+section#covid_what #about_covid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+section#covid_what #about_covid .title {
+  background-color: rgba(255,98,118,0.3);
+  color: var(--19);
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins';
+  cursor: pointer;
+}
+
+section#covid_what #about_covid .title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: var(--19);
+}
+
+section#covid_what .para_covid h1 {
+  font-family: 'Anton';
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: var(--covid);
+}
+
+section#covid_what .para_covid p {
+  font-size: 1.2em;
+  font-family: 'Roboto';
+  line-height: 2em;
+}
+
+@media (max-width: 500px) {
+  section#covid_what .para_covid p {
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    line-height: 1.6em;
+  }
+}
+
+section#covid_what .btn_title {
+  background: var(--19);
+  padding: 0.8em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(255,98,118,0.5);
+  outline: none!important;
+  border: none!important;
+  transition: all 0.4s ease;
+}
+
+section#covid_what .btn_title:hover {
+  background: var(--19_hover);
+  box-shadow: 0 5px 20px var(--19);
+}
+
+section#covid_what .btn_title a {
+  margin: 0;
+  padding: 12.8px;
+  font-family: 'Roboto';
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none;
+  border: none;
+}
+
+section#covid_spread .container .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#covid_spread #heading {
+  font-family: 'Anton';
+  font-weight: 100;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: var(--covid);
+}
+
+@media (max-width: 600px) {
+  section#covid_spread #heading {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+  }
+}
+
+section#covid_spread p#para {
+  font-family: 'Poppins';
+  font-size: 1em;
+  font-weight: lighter;
+  color: var(--active);
+}
+
+section#covid_symptoms #title {
+  font-family: 'Anton';
+  font-weight: 100;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: var(--covid);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  section#covid_symptoms #title {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+  }
+}
+
+section#covid_safety .col #text h1 {
+  font-family: 'Anton';
+  font-weight: 100;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: var(--covid);
+}
+
+@media (max-width: 600px) {
+  section#covid_safety .col #text h1 {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+  }
+}
+
+section#covid_safety .col #text p {
+  font-family: 'Poppins';
+  font-size: 1em;
+  font-weight: lighter;
+  color: var(--recover);
+}
+
+section#covid_question h1#text {
+  font-family: 'Anton';
+  font-weight: 100;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: var(--covid);
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  section#covid_question h1#text {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+  }
+}
+
+section#footer .row .col {
+}
+
+section#footer .row .col #head {
+  font-size: 3rem;
+  font-family: 'Anton';
+  font-weight: 100;
+  line-height: 0.8em;
+  letter-spacing: 1px;
+  color: var(--covid);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-shadow: 0px 9px 15px rgba(49,54,86,0.5);
+  transition: 0.6s;
+}
+
+section#footer .row .col#right #head span {
+  color: var(--19);
+  text-shadow: 0px 9px 15px rgba(255,98,118,0.5);
+}
+
+section#footer .row .col#right #text {
+  padding: 1em 0;
+  font-size: 1rem;
+  color: #596978;
+  font-family: 'Roboto';
+  /*font-weight: 600;*/
+  line-height: 1.5em;
+}
+
+section#footer .row .col #credit {
+  padding: 1em 0;
+  font-size: 1rem;
+  color: #596978;
+  font-family: 'Roboto';
+  /*font-weight: 600;*/
+  line-height: 1.5em;
+}
+
+@media (max-width: 800px) {
+  section#footer .row .col #credit {
+    font-size: 0.9rem;
+  }
+}
+
