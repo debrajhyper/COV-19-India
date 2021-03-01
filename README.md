@@ -16,6 +16,8 @@ Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</
 # Website Info
 Developed by <a href="https://github.com/debrajhyper">Debraj Karmakar</a>
 
+    <a href="https://debrajhyper.github.io/COV-19-India/">This</a> is a small effort from my side to keep yourself updated with number of corona cases reported in India so far. Checkout the available APIs here. Thankful to this organization for such a wonderful API. The Open Graph image used is taken from here.
+
 Technology Used :
 <ul>
     <li>HTML</li>
