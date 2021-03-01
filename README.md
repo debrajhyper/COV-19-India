@@ -1,6 +1,6 @@
 # COV-19-India
 
-Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19|India</a>
+Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</a>
 
 
     Coronavirus Outbreak in India: Latest Map and Case Count with real Time 
