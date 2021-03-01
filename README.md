@@ -6,9 +6,15 @@ Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</
     Coronavirus Outbreak in India: Latest Map and Case Count with real Time 
     update data along with essential information.
 
+    ╔═╗╔╦╗╔═╗╦ ╦  ╦ ╦╔═╗╔╦╗╔═╗
+    ╚═╗ ║ ╠═╣╚╦╝  ╠═╣║ ║║║║║╣ 
+    ╚═╝ ╩ ╩ ╩ ╩   ╩ ╩╚═╝╩ ╩╚═╝
+    ╔═╗╔╦╗╔═╗╦ ╦  ╔═╗╔═╗╔═╗╔═╗
+    ╚═╗ ║ ╠═╣╚╦╝  ╚═╗╠═╣╠╣ ║╣ 
+    ╚═╝ ╩ ╩ ╩ ╩   ╚═╝╩ ╩╚  ╚═╝
 
 # Website Info
-Designed by <a href="https://github.com/debrajhyper">Debraj Karmakar</a>
+Developed by <a href="https://github.com/debrajhyper">Debraj Karmakar</a>
 
 Technology Used :
 <ul>
