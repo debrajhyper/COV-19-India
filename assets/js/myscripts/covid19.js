@@ -35,7 +35,7 @@ async function getcovidapi(){
 	const {totalsamplestested} = tested;
 	const number_totalsamplestested = new Intl.NumberFormat('en-IN').format(totalsamplestested)
     
-	const {totaldosesadministered} = tested;
+	var {totaldosesadministered} = tested;
     var number_total_doses_administered; 
     if(totaldosesadministered > 0){
         number_total_doses_administered = new Intl.NumberFormat('en-IN').format(totaldosesadministered);
