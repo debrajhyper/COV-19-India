@@ -1,10 +1,10 @@
 # COV-19-India
 
-Website : https://debrajhyper.github.io/Recipe_App/
+Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19|India</a>
 
 
-    Find your everyday cooking inspiration on Recipe Website. Discover recipes, cooks, videos, and 
-    how-tos based on the food you love.
+    Coronavirus Outbreak in India: Latest Map and Case Count with real Time 
+    update data along with essential information.
 
 
 # Website Info
