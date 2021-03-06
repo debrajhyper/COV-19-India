@@ -1,0 +1,6 @@
+1.	https://api.covid19india.org/data.json
+2.	https://api.covid19india.org/v2/state_district_wise.json
+3.	https://api.rootnet.in/covid19-in/hospitals/beds
+4.	https://api.rootnet.in/covid19-in/hospitals/medical-colleges
+5.	https://api.rootnet.in/covid19-in/contacts
+6.	https://api.covid19india.org/v4/data.json
