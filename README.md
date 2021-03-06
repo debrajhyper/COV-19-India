@@ -97,3 +97,19 @@ if (_.isAwesome(thisRepo)) {
 }
 ```
 
+# Conclusion:
+
+- Here are the key takeaways of this Project
+- Working with an HTTP request
+- Working with JSON Data (Arrays and Objects)
+- Sorting Numeric Data
+- Sorting Datatypes
+- Sorting String and Object arrays
+- Doing arithmetic Calculation on Object types
+- Nesting Table Dynamically
+- Loading component Dyanamically on Click
+- Use of moment Date Filter
+- Export data directly from the webpage
+
+So I hope you will like this project. And kindly do check my live link to the website. Please feel free to go through the statistics and keep learning and utilize your time. STAY SAFE.
+
