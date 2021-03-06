@@ -1,6 +1,6 @@
 # COV-19-India
 
-## Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</a>
+<b style="letter-spacing:1.6px">Website : </b><a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</a>
 <br>
 
     Coronavirus Outbreak in India: Latest Map and Case Count with real Time 
@@ -28,7 +28,7 @@
         ╚═╝ ╩ ╩ ╩ ╩   ╚═╝╩ ╩╚  ╚═╝
 
 # Website Info
-## Developed by <a href="https://github.com/debrajhyper">Debraj Karmakar</a>
+Developed by <a href="https://github.com/debrajhyper">Debraj Karmakar</a>
 <br>
 
 ><a href="https://debrajhyper.github.io/COV-19-India/">This</a> is a small effort from my side to keep yourself updated with number of corona cases reported in India so far. Checkout the available APIs <a href="https://covid-19-apis.postman.com/">here</a>. Thankful to <a href="https://github.com/covid19india">@covid19india</a> organization for such a wonderful API. The Open Graph image used is taken from here.
@@ -36,7 +36,7 @@
 
 <br>
 
-## Technology Used :
+<b style="letter-spacing:1.2px">Technology Used :</b>
 <ul>
     <li>HTML5</li>
     <li>CSS3</li>
@@ -54,7 +54,7 @@
 </ul>
 
 # API
-## Official data
+<b style="letter-spacing:1px">Official Data</b>
 * Case counts:
   * <a href="https://api.rootnet.in/covid19-in/stats/latest">api.rootnet.in/covid19-in/stats/latest</a>
   * <a href="https://api.rootnet.in/covid19-in/stats/history">api.rootnet.in/covid19-in/stats/history</a>
@@ -73,7 +73,7 @@
 * Contact & helpline:
   * <a href="https://api.rootnet.in/covid19-in/contacts">api.rootnet.in/covid19-in/contacts</a>
 
-## Unofficial data
+<b style="letter-spacing:1px">Unofficial Data</b>
 
 * Unofficial sources: https://api.rootnet.in/covid19-in/unofficial/sources
 * Unofficial patient tracing data: https://api.rootnet.in/covid19-in/unofficial/covid19india.org
@@ -81,8 +81,6 @@
 * Unofficial statewise history: https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise/history
 
 # Screenshots
-<h3>Dashboard</h3>
-<img src="assets/img/1.png"/>
     
 <h3>Dashboard | Data Table</h3>
 <img src="assets/img/3.png"/>
@@ -108,7 +106,7 @@ if (_.isAwesome(thisRepo)) {
 
 # Conclusion:
 
-## Here are the key takeaways of this Project
+<b style="letter-spacing:1px">Here are the key takeaways of this Project</b>
 
 - Working with an HTTP request
 - Working with JSON Data (Arrays and Objects)
@@ -127,20 +125,4 @@ if (_.isAwesome(thisRepo)) {
 
 >### So I hope you will like this project. And kindly do check my live link to the website. Please feel free to go through the statistics and keep learning and utilize your time. STAY SAFE.
 
-
-# Conclusion:
-
-- Here are the key takeaways of this Project
-- Working with an HTTP request
-- Working with JSON Data (Arrays and Objects)
-- Sorting Numeric Data
-- Sorting Datatypes
-- Sorting String and Object arrays
-- Doing arithmetic Calculation on Object types
-- Nesting Table Dynamically
-- Loading component Dyanamically on Click
-- Use of moment Date Filter
-- Export data directly from the webpage
-
-So I hope you will like this project. And kindly do check my live link to the website. Please feel free to go through the statistics and keep learning and utilize your time. STAY SAFE.
 
