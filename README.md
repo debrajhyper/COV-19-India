@@ -1,10 +1,16 @@
 # COV-19-India
 
-Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</a>
-
+## Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</a>
+<br>
 
     Coronavirus Outbreak in India: Latest Map and Case Count with real Time 
     update data along with essential information.
+
+<br>
+
+[![Watch the video](assets/img/1.png)](https://drive.google.com/file/d/1SSWH1rL4BWYOtSN9CqMOiRp0e9OKfcLj/view?usp=sharing)
+
+<br>
 
 # Key Features
 - Easy Data representation of Covid cases in India.
@@ -22,13 +28,15 @@ Website : <a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</
         ╚═╝ ╩ ╩ ╩ ╩   ╚═╝╩ ╩╚  ╚═╝
 
 # Website Info
-Developed by <a href="https://github.com/debrajhyper">Debraj Karmakar</a>
+## Developed by <a href="https://github.com/debrajhyper">Debraj Karmakar</a>
+<br>
 
 ><a href="https://debrajhyper.github.io/COV-19-India/">This</a> is a small effort from my side to keep yourself updated with number of corona cases reported in India so far. Checkout the available APIs <a href="https://covid-19-apis.postman.com/">here</a>. Thankful to <a href="https://github.com/covid19india">@covid19india</a> organization for such a wonderful API. The Open Graph image used is taken from here.
 <br>
 
 <br>
-Technology Used :
+
+## Technology Used :
 <ul>
     <li>HTML5</li>
     <li>CSS3</li>
@@ -46,7 +54,7 @@ Technology Used :
 </ul>
 
 # API
-Official data
+## Official data
 * Case counts:
   * <a href="https://api.rootnet.in/covid19-in/stats/latest">api.rootnet.in/covid19-in/stats/latest</a>
   * <a href="https://api.rootnet.in/covid19-in/stats/history">api.rootnet.in/covid19-in/stats/history</a>
@@ -65,7 +73,7 @@ Official data
 * Contact & helpline:
   * <a href="https://api.rootnet.in/covid19-in/contacts">api.rootnet.in/covid19-in/contacts</a>
 
-Unofficial data
+## Unofficial data
 
 * Unofficial sources: https://api.rootnet.in/covid19-in/unofficial/sources
 * Unofficial patient tracing data: https://api.rootnet.in/covid19-in/unofficial/covid19india.org
@@ -73,16 +81,16 @@ Unofficial data
 * Unofficial statewise history: https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise/history
 
 # Screenshots
-<h3>Data</h3>
+<h3>Dashboard</h3>
 <img src="assets/img/1.png"/>
     
-<h3>Dashboard | Table</h3>
+<h3>Dashboard | Data Table</h3>
 <img src="assets/img/3.png"/>
 
-<h3>Dashboard | Map</h3>
+<h3>Dashboard | Map visualization</h3>
 <img src="assets/img/4.png"/>
 
-<h3>Cov-19 About</h3>
+<h3>Cov-19 Information</h3>
 <img src="assets/img/5.png"/>
 
 <h3>All your queries</h3>
@@ -96,4 +104,27 @@ if (_.isAwesome(thisRepo)) {
   thisRepo.star(); // thanks in advance :p
 }
 ```
+<br>
+
+# Conclusion:
+
+## Here are the key takeaways of this Project
+
+- Working with an HTTP request
+- Working with JSON Data (Arrays and Objects)
+- Sorting Numeric Data
+- Sorting Datatype
+- Sorting String and Object arrays
+- Doing arithmetic Calculation on Object types
+- Nesting Table Dynamically
+- Loading component Dynamically on Click
+- Use of moment Date Filter
+- Export data directly from the webpage
+<br>
+
+<br>
+
+
+>### So I hope you will like this project. And kindly do check my live link to the website. Please feel free to go through the statistics and keep learning and utilize your time. STAY SAFE.
+
 
