@@ -262,10 +262,10 @@ export function plotchart(selection_id, casetype, seriresdata, case_category = "
             return d[1][case_category][casetype]
         })
         const plotValue = {
-            confirmed: [minmax[0], minmax[1] * 1.8],
-            active: [minmax[0], minmax[1] *1.17],
-            recovered: [minmax[0], minmax[1] * 1.8],
-            deceased: [minmax[0], minmax[1] * 1.28]
+            confirmed: [minmax[0], minmax[1] * 1.5],
+            active: [minmax[0], minmax[1] * 1.5],
+            recovered: [minmax[0], minmax[1] * 1.5],
+            deceased: [minmax[0], minmax[1] * 1.5]
         }
         y.domain([plotValue[casetype][0], plotValue[casetype][1]]);
         svg.selectAll(".cummulative-yaxis").call(yAxis);
@@ -380,10 +380,10 @@ export function plotchart(selection_id, casetype, seriresdata, case_category = "
             return d[1][case_category][casetype]
         })
         const plotValue = {
-            confirmed: [minmax[0], minmax[1] * 2.2],
-            active: [minmax[0], minmax[1] * 1],
-            recovered: [minmax[0], minmax[1] * 2.3],
-            deceased: [minmax[0], minmax[1] * 1.28]
+            confirmed: [minmax[0], minmax[1] * 2],
+            active: [minmax[0], minmax[1] * 2],
+            recovered: [minmax[0], minmax[1] * 2],
+            deceased: [minmax[0], minmax[1] * 2]
         }
         y.domain([plotValue[casetype][0], plotValue[casetype][1]]);
         svg.selectAll(".cummulative-yaxis").call(yAxis);
@@ -498,10 +498,10 @@ export function plotchart(selection_id, casetype, seriresdata, case_category = "
             return d[1][case_category][casetype]
         })
         const plotValue = {
-            confirmed: [minmax[0], minmax[1] * 1.8],
-            active: [minmax[0], minmax[1] * 1],
-            recovered: [minmax[0], minmax[1] * 1.8],
-            deceased: [minmax[0], minmax[1] * 2.5]
+            confirmed: [minmax[0], minmax[1] * 2],
+            active: [minmax[0], minmax[1] * 2],
+            recovered: [minmax[0], minmax[1] * 2],
+            deceased: [minmax[0], minmax[1] * 2]
         }
         y.domain([plotValue[casetype][0], plotValue[casetype][1]]);
         svg.selectAll(".cummulative-yaxis").call(yAxis);
@@ -615,10 +615,10 @@ export function plotchart(selection_id, casetype, seriresdata, case_category = "
             return d[1][case_category][casetype]
         })
         const plotValue = {
-            confirmed: [minmax[0], minmax[1] * 1.8],
-            active: [minmax[0], minmax[1] * 1],
-            recovered: [minmax[0], minmax[1] * 1.8],
-            deceased: [minmax[0], minmax[1] * 2.5]
+            confirmed: [minmax[0], minmax[1] * 2],
+            active: [minmax[0], minmax[1] * 2],
+            recovered: [minmax[0], minmax[1] * 2],
+            deceased: [minmax[0], minmax[1] * 2]
         }
         y.domain([plotValue[casetype][0], plotValue[casetype][1]]);
         svg.selectAll(".cummulative-yaxis").call(yAxis);
@@ -761,10 +761,10 @@ export function lollipopchart(selection_id, casetype, seriresdata, case_category
 
         const minmax = d3.extent(d2, function (d) { return d[1][case_category][casetype] })
         const plotValue = {
-            confirmed: [minmax[0] * 1.2, minmax[1] * 1.1],
-            active: [minmax[0] * 1.2, minmax[1] * 1.1],
-            recovered: [minmax[0] * 1.2, minmax[1] * 1.1],
-            deceased: [minmax[0] * 1.2, minmax[1] * 1.1]
+            confirmed: [minmax[0] * 1.2, minmax[1] * 1.2],
+            active: [minmax[0] * 1.2, minmax[1] * 1.2],
+            recovered: [minmax[0] * 1.2, minmax[1] * 1.2],
+            deceased: [minmax[0] * 1.2, minmax[1] * 1.2]
         }
         y.domain([plotValue[casetype][0], plotValue[casetype][1]]);
 
@@ -871,10 +871,10 @@ export function lollipopchart(selection_id, casetype, seriresdata, case_category
 
         const minmax = d3.extent(d2, function (d) { return d[1][case_category][casetype] })
         const plotValue = {
-            confirmed: [minmax[0] * 1.2, minmax[1] * 0.8],
+            confirmed: [minmax[0] * 1.2, minmax[1] * 1.2],
             active: [minmax[0] * 0.9, minmax[1] * 1.2],
-            recovered: [minmax[0] * 1.2, minmax[1] * 0.7],
-            deceased: [minmax[0] * 1.2, minmax[1] * 0.38]
+            recovered: [minmax[0] * 1.2, minmax[1] * 1.2],
+            deceased: [minmax[0] * 1.2, minmax[1] * 1.2]
         }
         y.domain([plotValue[casetype][0], plotValue[casetype][1]]);
 
@@ -984,8 +984,8 @@ export function lollipopchart(selection_id, casetype, seriresdata, case_category
         const plotValue = {
             confirmed: [minmax[0] * 1.2, minmax[1] * 1.2],
             active: [minmax[0] * 0.5, minmax[1] * 1.2],
-            recovered: [minmax[0] * 1.2, minmax[1] * 0.7],
-            deceased: [minmax[0] * 1.2, minmax[1] * 0.35]
+            recovered: [minmax[0] * 1.2, minmax[1] * 1.2],
+            deceased: [minmax[0] * 1.2, minmax[1] * 1.2]
         }
         y.domain([plotValue[casetype][0], plotValue[casetype][1]]);
 
@@ -1095,8 +1095,8 @@ export function lollipopchart(selection_id, casetype, seriresdata, case_category
         const plotValue = {
             confirmed: [minmax[0] * 1.2, minmax[1] * 1.2],
             active: [minmax[0] * 0.3, minmax[1] * 1.2],
-            recovered: [minmax[0] * 1.2, minmax[1] * 0.7],
-            deceased: [minmax[0] * 1.2, minmax[1] * 0.7]
+            recovered: [minmax[0] * 1.2, minmax[1] * 1.2],
+            deceased: [minmax[0] * 1.2, minmax[1] * 1.2]
         }
         y.domain([plotValue[casetype][0], plotValue[casetype][1]]);
 

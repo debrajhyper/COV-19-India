@@ -51,10 +51,6 @@ section#covid_symptoms .row.space-rows .col {
   }
 }
 
-.card.cards-shadown {
-  /*box-shadow: 2px 2px 30px rgba(111,66,193,0.3);*/
-}
-
 .card.cards-shadown.cards-hover:hover {
   /*-webkit-transform: scale(1.1);*/
   /*-moz-transform: scale(1.1);*/
