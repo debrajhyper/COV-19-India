@@ -8,7 +8,9 @@
 
 <br>
 
-[![Watch the video](assets/img/1.png)](https://drive.google.com/file/d/1SSWH1rL4BWYOtSN9CqMOiRp0e9OKfcLj/view?usp=sharing)
+<p align="center">
+  <img height="540" width="240" src="assets/img/Cov-19-India.gif?raw=true">
+</p>
 
 <br>
 
