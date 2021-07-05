@@ -9,7 +9,7 @@
 <br>
 
 <p align="center">
-  <img height="720" width="1280" src="assets/img/Cov-19-India.gif?raw=true">
+  <img src="assets/img/Cov-19-India.gif?raw=true">
 </p>
 
 <br>
