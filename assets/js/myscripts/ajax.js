@@ -6,14 +6,10 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
 	var medical = a4[0].data.medicalColleges;
 	var contact = a5[0].data.contacts.regional;
     var population = Object.values(a6[0]);
-<<<<<<< Updated upstream
-	
-	var mainArray = mainArray_raw.slice(1, mainArray_raw.length - 2)
-=======
 
 	var mainArray = mainArray_raw.slice(1, mainArray_raw.length)
+
     mainArray.splice(30,1);
->>>>>>> Stashed changes
 	district.splice(0, 1);
 
 	for (row of mainArray) {
