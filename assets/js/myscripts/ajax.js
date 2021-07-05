@@ -7,7 +7,7 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
 	var contact = a5[0].data.contacts.regional;
     var population = Object.values(a6[0]);
 
-	var mainArray = mainArray_raw.slice(1, mainArray_raw.length);
+	var mainArray = mainArray_raw.slice(1, mainArray_raw.length)
 
     mainArray.splice(30,1);
 	district.splice(0, 1);
@@ -363,7 +363,7 @@ function buildTable(mainArray){
 
     $('.row_state').on('click', function show_district() {
         // console.log(dashboard.classList.value)
-        var state = $(this).data('state')
+	    var state = $(this).data('state')
         $(tr).toggleClass("active")
         
         buildTableDist(mainArray, table, state)
