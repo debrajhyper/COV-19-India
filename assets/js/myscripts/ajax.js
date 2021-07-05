@@ -6,9 +6,14 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
 	var medical = a4[0].data.medicalColleges;
 	var contact = a5[0].data.contacts.regional;
     var population = Object.values(a6[0]);
-
+<<<<<<< Updated upstream
+	
 	var mainArray = mainArray_raw.slice(1, mainArray_raw.length - 2)
-    mainArray.splice(30,30);
+=======
+
+	var mainArray = mainArray_raw.slice(1, mainArray_raw.length)
+    mainArray.splice(30,1);
+>>>>>>> Stashed changes
 	district.splice(0, 1);
 
 	for (row of mainArray) {
@@ -70,11 +75,9 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
     
 
     for(var e1 of mainArray){
-        var ob=removeWhiteSpace(population[31].districts)
-        delete population[31].districts.Other_State;
         for(var e2 of population){
             if(e2.districts != null){
-                var g = Object.values(e2.districts)
+                var g = Object.values(e2.districts);
                 for(var e3 of g){
                     for(var e4 of e1.districtData){
                         if(e3.total.confirmed == e4.confirmed){
@@ -93,22 +96,10 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
         }
     }
     
-    function removeWhiteSpace(obj) {
-        if (typeof obj !== "object") return obj;
-        for (var prop in obj) {
-            if (obj.hasOwnProperty(prop)) {
-                obj[prop.replace(" ", "_")] =  removeWhiteSpace(obj[prop]); 
-                if (prop.indexOf(" ") > -1) { 
-                    delete obj[prop];  
-                } 
-            }
-        }
-        return obj;
-    }
 
     buildTable(mainArray)
     
-    console.log(mainArray);
+    // console.log(mainArray);
 	
 	
 	
