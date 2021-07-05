@@ -872,7 +872,7 @@ export function lollipopchart(selection_id, casetype, seriresdata, case_category
         const minmax = d3.extent(d2, function (d) { return d[1][case_category][casetype] })
         const plotValue = {
             confirmed: [minmax[0] * 1.2, minmax[1] * 1.2],
-            active: [minmax[0] * 0.9, minmax[1] * 1.2],
+            active: [minmax[0] * 1.2, minmax[1] * 1.2],
             recovered: [minmax[0] * 1.2, minmax[1] * 1.2],
             deceased: [minmax[0] * 1.2, minmax[1] * 1.2]
         }
@@ -983,7 +983,7 @@ export function lollipopchart(selection_id, casetype, seriresdata, case_category
         const minmax = d3.extent(d2, function (d) { return d[1][case_category][casetype] })
         const plotValue = {
             confirmed: [minmax[0] * 1.2, minmax[1] * 1.2],
-            active: [minmax[0] * 0.5, minmax[1] * 1.2],
+            active: [minmax[0] * 1.2, minmax[1] * 1.2],
             recovered: [minmax[0] * 1.2, minmax[1] * 1.2],
             deceased: [minmax[0] * 1.2, minmax[1] * 1.2]
         }
@@ -1094,7 +1094,7 @@ export function lollipopchart(selection_id, casetype, seriresdata, case_category
         const minmax = d3.extent(d2, function (d) { return d[1][case_category][casetype] })
         const plotValue = {
             confirmed: [minmax[0] * 1.2, minmax[1] * 1.2],
-            active: [minmax[0] * 0.3, minmax[1] * 1.2],
+            active: [minmax[0] * 1.2, minmax[1] * 1.2],
             recovered: [minmax[0] * 1.2, minmax[1] * 1.2],
             deceased: [minmax[0] * 1.2, minmax[1] * 1.2]
         }
