@@ -171,7 +171,6 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
                 var order = $(this).data('order')
                 $(this).addClass('active').siblings().removeClass('active')
                 
-                //console.log('colume was clicked : ',column,order);
                 if (order == 'desc') {
                     if(column == "delta_districts"){
                         for(let i=0; i<mainArray.length ; i++){
@@ -233,7 +232,7 @@ function buildTable(mainArray){
     
     var table = document.getElementById('tbody')
     table.innerHTML = ''
-    //console.log(statewise);
+
     for (var i = 0; i < mainArray.length; i++) {
 		
 		// // var state_active_ratio = (mainArray[i].active / mainArray[i].confirmed * 100);
@@ -362,7 +361,7 @@ function buildTable(mainArray){
 
 
     $('.row_state').on('click', function show_district() {
-        // console.log(dashboard.classList.value)
+
 	    var state = $(this).data('state')
         $(tr).toggleClass("active")
         
@@ -380,7 +379,6 @@ function buildTable(mainArray){
             var order = $(this).data('order')
             $(this).addClass('active').siblings().removeClass('active')
             
-            //console.log('colume was clicked : ',column,order);
             if (order == 'desc') {
                 if(column == "delta_districts"){
                     for(let i=0; i<mainArray.length ; i++){
