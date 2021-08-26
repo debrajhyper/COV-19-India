@@ -446,6 +446,8 @@ function ajax1() {
     return $.ajax({
         method: 'GET',
         url: 'https://api.covid19india.org/data.json',
+	crossDomain: true,
+   	dataType: 'json',
         success: function(response) {
             return response;
         }
