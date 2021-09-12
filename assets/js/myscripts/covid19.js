@@ -3,7 +3,7 @@
 async function getcovidapi(){
 		
 	
-	const jsondata = await fetch('https://api.covid19india.org/data.json');
+	const jsondata = await fetch('https://data.covid19india.org/data.json');
 	const jsdata = await jsondata.json();
 	
 	

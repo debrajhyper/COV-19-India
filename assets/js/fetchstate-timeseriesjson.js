@@ -1,7 +1,7 @@
 export async function state_timeseries(st_code_dropdown){
     // const res =await fetch('../apidata/state-timeseries.json')
     //const res =await fetch('https://raw.githubusercontent.com/Viren-Gajera/india-topojson/main/apidata/state-timeseries.json')
-    const res =await fetch('https://api.covid19india.org/v4/timeseries.json')
+    const res =await fetch('https://data.covid19india.org/v4/timeseries.json')
     const resjson=await res.json()
 
     const nodata={confirmed:0,active:0,recovered:0,deceased:0,tested:0}

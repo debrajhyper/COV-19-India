@@ -2,13 +2,13 @@ export async function fetchdataall(st_cd) {
 
     //const res = await fetch('../apidata/data-all.json')
     //const res=await fetch('https://raw.githubusercontent.com/Viren-Gajera/india-topojson/main/apidata/data-all.json')
-    const res=await fetch('https://api.covid19india.org/v4/data-all.json')
+    const res=await fetch('https://data.covid19india.org/v4/data-all.json')
     const data_all = await res.json()
 
 
     //const  latest_state_res = await fetch("../apidata/latest_state.json")
     //const  latest_state_res = await fetch("https://raw.githubusercontent.com/Viren-Gajera/india-topojson/main/apidata/latest_state.json")
-    const  latest_state_res = await fetch("https://api.covid19india.org/v4/data.json")
+    const  latest_state_res = await fetch("https://data.covid19india.org/v4/data.json")
     const latest_state_res_json = await latest_state_res.json()
 
 

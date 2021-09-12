@@ -89,7 +89,7 @@ export const statenametostatecode={"Total":"TT","Maharashtra":"MH","Tamil Nadu":
 export async function lateststatefetch() {
     //const res = await fetch("../apidata/latest_state.json")
     //const res = await fetch("https://raw.githubusercontent.com/Viren-Gajera/india-topojson/main/apidata/latest_state.json")
-    const res = await fetch("https://api.covid19india.org/v4/data.json")
+    const res = await fetch("https://data.covid19india.org/v4/data.json")
     const resjson = await res.json()
     return resjson
 

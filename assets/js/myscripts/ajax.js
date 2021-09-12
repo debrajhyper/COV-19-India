@@ -69,7 +69,7 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
 		}
 	}
     
-
+    
     for(var e1 of mainArray){
         for(var e2 of population){
             if(e2.districts != null){
@@ -77,7 +77,7 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
                 for(var e3 of g){
                     for(var e4 of e1.districtData){
                         if(e3.total.confirmed == e4.confirmed){
-                            e4.tested = e3.total.tested;
+                            e4.tested = e3.total.tested > 0 ? e3.total.tested : "-";
                             if(e3.meta != null){
                                 e4.population = e3.meta.population;
                             }
@@ -85,8 +85,9 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
                     }
                 }
             }
+            //console.log(e2)
             if(e1.confirmed == e2.total.confirmed){
-                e1.tested = e2.total.tested;
+                e1.tested = e2.total.tested > 0 ? e2.total.tested : "-";
                 e1.population = e2.meta.population;
             }
         }
@@ -445,7 +446,7 @@ function buildTable(mainArray){
 function ajax1() {
     return $.ajax({
         method: 'GET',
-        url: 'https://api.covid19india.org/data.json',
+        url: 'https://data.covid19india.org/data.json',
         success: function(response) {
             return response;
         }
@@ -455,7 +456,7 @@ function ajax1() {
 function ajax2() {
     return $.ajax({
         method: 'GET',
-        url: 'https://api.covid19india.org/v2/state_district_wise.json',
+        url: 'https://data.covid19india.org/v2/state_district_wise.json',
         success: function(delta_response) {
             delete delta_response[0]
             var delta_myArray = delta_response
@@ -503,7 +504,7 @@ function ajax5() {
 function ajax6() {
     return $.ajax({
         method: "GET",
-        url: "https://api.covid19india.org/v4/data.json",
+        url: "https://data.covid19india.org/v4/data.json",
         success: function(t) {
             return t
         }
