@@ -1,4 +1,4 @@
-# COV-19-India
+# COV-19-India [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/debrajhyper)
 
 <b style="letter-spacing:1.6px">Website : </b><a href="https://debrajhyper.github.io/COV-19-India/">COV-19 | India</a>
 <br>
