@@ -74,16 +74,16 @@ $.when(ajax1(), ajax2(), ajax3(), ajax4(), ajax5(), ajax6()).done(function(a1, a
         for(var e2 of population){
             if(e2.districts != null){
                 var g = Object.values(e2.districts);
-                for(var e3 of g){
-                    for(var e4 of e1.districtData){
-                        if(e3.total.confirmed == e4.confirmed){
-                            e4.tested = e3.total.tested > 0 ? e3.total.tested : "-";
-                            if(e3.meta != null){
-                                e4.population = e3.meta.population;
-                            }
-                        }
-                    }
-                }
+//                 for(var e3 of g){
+//                     for(var e4 of e1.districtData){
+//                         if(e3.total.confirmed == e4.confirmed){
+//                             e4.tested = e3.total.tested > 0 ? e3.total.tested : "-";
+//                             if(e3.meta != null){
+//                                 e4.population = e3.meta.population;
+//                             }
+//                         }
+//                     }
+//                 }
             }
             //console.log(e2)
             if(e1.confirmed == e2.total.confirmed){
