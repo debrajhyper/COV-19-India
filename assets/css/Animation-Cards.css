@@ -5,8 +5,9 @@ section#covid_symptoms .row.space-rows .col {
 .card.cards-shadown.cards-hover {
   outline: none;
   border: none;
-  max-width: 300px;
-  min-width: 100px;
+/*   max-width: 300px; */
+/*   min-width: 100px; */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
